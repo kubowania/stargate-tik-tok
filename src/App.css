@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+.App {
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 0;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 0;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.red {
+    color:#fe2c55;
+}
+  
+p {
+    color: grey;
+    font-size: 12px;
+    line-height: 0;
+}
+
+hr { 
+    display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid rgb(227,227,228);
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.break {
+    height: 10px;
+}
+
+/* Styling for Header Component*/
+.header {
+    height: 60px;
+    width: 100%;
+    border-bottom: solid 1px rgb(227,227,228);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    width: 129px;
+    height: 40px;
+    background-image: url('https://i.imgur.com/ZZ75Unh.png');
+    background-size: 129px;
+    margin: 5px;
+}
+
+.upload {
+    width: 30px;
+    height: 25px;
+    margin-top: 15px;
+    background-image: url('https://i.imgur.com/0MtQ9RF.png');
+    background-size: 30px;
+}
+
+.personal {
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+    border-radius: 20px;
+    margin: 5px 20px 0 20px;
+}
+
+/* Styling for Home Page */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.suggested-box {
+    min-width: 320px;
+    height: 600px;
+    padding: 10px;
+}
+
+.suggested {
+    width: 280px;
+    height: 350px;
+    border: 1px solid rgb(227,227,228);
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+  
+
+/* Styling for Upload Page */
+.upload-page {
+    margin-left: 30px;
+}
+
+.image-upload {
+    width: 400px;
+    height: 230px;
+    background-color: rgb(22,24,35,0.03);
+    border-radius: 10px;
+}
+
+.input-section {
+    margin: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-section {
+    margin-left: 20px;
+    margin-top: 60px;
+}
+
+label {
+    font-size: 40px;
+    line-height: 0; 
+}
+
+input {
+    height: 45px;
+    width: 500px;
+    font-size: 35px;
+    margin-top: -20px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    float: right;
+}
+
+
+/* Styling for Card Components */
+.card {
+    border-bottom: 1px solid rgb(227,227,228);
+    width: 500px;
+    height: 600px;
+}
+
+.minicard {
+    margin: 10px 0 0 0;
+    justify-content: space-between;
+}
+
+.microcard {
+    margin: 10px 0 0 0;
+}
+
+.user-profile {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.social-tag {
+    margin: 0 20px 0 5px;
+}
+
+.video {
+    width: 270px;
+    border-radius: 15px;
+    margin-left: 70px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    width: 412px;
+}
+
+.username {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.socials {
+    margin-left: 70px;
+}
+
+.follow-button {
+    border: 1px solid #fe2c55;
+    border-radius: 3px;
+    width: 88px;
+    height: 16px;
+    color: #fe2c55;
+    font-weight: 600;
+    padding: 2px 0 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.followed-button {
+    border: 1px solid rgb(227,227,228);
+    border-radius: 3px;
+    width: 88px;
+    height: 16px;
+    font-weight: 600;
+    padding: 2px 0 3px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+/* Styling for FollowersColumn Component */
+.followers-column {
+    min-width: 230px;
+    height: 600px;
+    padding: 10px;
+}
+
+.followers-section {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 30px 0;
+}
+
+.home {
+    width: 30px;
+    height: 29px;
+    background-image: url('https://i.imgur.com/Q582Dp0.png');
+    background-size: 30px;
+    margin-right: 15px;
+}
+
+.following {
+    width: 30px;
+    height: 29px;
+    background-image: url('https://i.imgur.com/Aq7L3jv.png');
+    background-size: 30px;
+    margin-right: 15px;
+}
