@@ -26,9 +26,11 @@ const Home = () => {
   if (userToToggle) {
   const newValue = userToToggle.is_followed ? false : true
 
-  const data = `${userToToggle}, { is_followed: ${newValue}}`
-
-  axios.put('/.netlify/functions/edit', data).then(res => res.json())
+  //currently not working
+  const data = `${userToToggle.id}, { is_followed: ${newValue}}`
+    console.log(data)
+  axios.put('/.netlify/functions/edit', data)
+    .then(res => res.json())
     .then(json => console.log(json))
     .catch(err => console.error('error:' + err))
     .then(() => fetchData())
