@@ -35,7 +35,7 @@ Step:2
 ### `start:lambda`
 
 This will start your netlify functions in development mode and get the data you need for your app in step 1. Run along side step 1.\
-Open [http://localhost:9000](http://localhost:39000) followed by the path to your Netlify functions, eg: [http://localhost:9000/.netlify/functions/addData](http://localhost:9000/.netlify/functions/addData) to view the data in the browser.\
+Open [http://localhost:9000](http://localhost:39000) followed by the path to your Netlify functions, eg: [http://localhost:9000/.netlify/functions/posts](http://localhost:9000/.netlify/functions/posts) to view the data in the browser.\
 IMPORTANT: .env content will not be picked up and you will have to import values such as ASTRA_DB_ID manually.
 
 
