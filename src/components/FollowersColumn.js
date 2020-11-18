@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import MicroCard from '../components/MicroCard'
-import axios from 'axios'
 
 const FollowersColumn = (topFiveFollowing) => {
   const users = topFiveFollowing.users

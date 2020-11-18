@@ -16,26 +16,24 @@ const Home = () => {
     await axios.post('/.netlify/functions/addData')
   }
 
+  //fetch all the tik-tok posts to your feed
   const fetchData = async () => {
     const results = await axios.get('/.netlify/functions/posts')
     console.log(results.data)
     setUsers(results.data)
   }
 
-
+  //toggle user from followed to unfollowed
   if (userToToggle) {
   const newValue = userToToggle.is_followed ? false : true
+  const data = {is_followed: newValue}
 
-  //currently not working
-  const data = `${userToToggle.id}, { is_followed: ${newValue}}`
-    console.log(data)
-  axios.put('/.netlify/functions/edit', data)
+   axios.put('/.netlify/functions/edit', {userId: userToToggle.id, data: data })
     .then(res => res.json())
     .then(json => console.log(json))
     .catch(err => console.error('error:' + err))
     .then(() => fetchData())
       setUserToToggle(null)
-      console.log('put is complete')
   }
 
   useEffect(() => {
@@ -46,7 +44,6 @@ const Home = () => {
   if (users) {
     descendingUsers = users.sort((a, b) => a.id < b.id ? 1 : -1)
     const following = users.filter(user => user.is_followed === true)
-    console.log(following)
     const descendingFollowing = following.sort((a, b) => a.likes < b.likes ? 1 : -1)
     topFiveFollowing = descendingFollowing.slice(0, 5)
 
@@ -78,8 +75,8 @@ const Home = () => {
                 <MiniCard 
                   key={index} user={notFollowingUser}
                   toggleFollow={userToToggle => setUserToToggle(userToToggle)}
-		  	  />)
-		  	)}
+		  	        />)
+		  	      )}
             </div>
           </div>
         </div>

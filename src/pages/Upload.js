@@ -11,7 +11,6 @@ const Upload = () => {
   const today = new Date()
   const timestamp = today.toISOString()
 
-  //TO DO: removed and replace with astra generated id
   let id = faker.random.uuid()
 
   const handleSubmit = async (e) => {
