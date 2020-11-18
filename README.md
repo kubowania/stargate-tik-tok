@@ -1,13 +1,11 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# STARGATE Tik-Tok App
 
 ## To start this app:
 ### `npm i`
 
 This will install the packages you need
 
-### ``npm install -g netlify-cli`
+### `npm install -g netlify-cli`
 ### `netlify dev`
 This will run as if you deployed your app onto Netlify. It will also use your .env content. Treat it as a preview.
 
