@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.0",
     "core-js": "^3.7.0",
-    "docker": "^1.0.0",
     "dotenv": "^8.2.0",
     "faker": "^5.1.0",
     "http-proxy-middleware": "^0.19.1",
