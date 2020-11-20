@@ -40,4 +40,3 @@ const Card = ({ user, toggleFollow }) => {
 }
 
 export default Card
-
