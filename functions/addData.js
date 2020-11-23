@@ -8,7 +8,7 @@ exports.handler = async function (event, context, callback) {
     astraDatabaseRegion: process.env.ASTRA_DB_REGION,
     username: process.env.ASTRA_DB_USERNAME,
     password: process.env.ASTRA_DB_PASSWORD,
-  });
+  })
 
   const posts = astraClient
     .namespace(process.env.ASTRA_DB_KEYSPACE)
@@ -80,7 +80,7 @@ exports.handler = async function (event, context, callback) {
       timestamp: "2020-09-10T09:08:31.020Z",
       button_visible: true,
     },
-  ];
+  ]
 
   try {
     for (let i = 0; i < data.length; i++) {
@@ -89,12 +89,12 @@ exports.handler = async function (event, context, callback) {
 
     return {
       statusCode: 200,
-    };
+    }
   } catch (e) {
     console.error(e);
     return {
       statusCode: 500,
       body: JSON.stringify(e),
-    };
+    }
   }
 }
