@@ -8,7 +8,7 @@ This will install the packages you need
 Fill this out by signing up to [DataStax](www.datastax.com) and getting the information you need as per the `.env.sample` template.
 
 ### `netlify dev`
-This will run as if you deployed your app onto Netlify. It will also use your .env content.
+This will run as if you deployed your app onto Netlify (but in dev mode). It will also use your .env content.
 
 
 # This Repo is to aid in the tutorial in [How to build a Tik-Tok App with a Cassandra Database](https://youtu.be/IATOicvih5A)
