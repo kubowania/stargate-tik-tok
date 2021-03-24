@@ -13,7 +13,7 @@ This will run as if you deployed your app onto Netlify (but in dev mode). It wil
 
 # This Repo is to aid in the tutorial in [How to build a Tik-Tok App with a Cassandra Database](https://youtu.be/IATOicvih5A)
 
-We build an App using the database used by Apple, Spotify, Netflix, Ebay and so many more.
+We build an App using the same database management system used by Apple, Spotify, Netflix, Ebay and so many more.
 
 This is a video where we will build a clone of a Tik Tok App. It's aim is to teach you how to build apps using databases in a simple and easy way. A prior knowledge of React is the only thing you will be needing to start this tutorial!
 
