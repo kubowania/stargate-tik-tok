@@ -11,7 +11,7 @@ const Upload = () => {
   const today = new Date()
   const timestamp = today.toISOString()
 
-  let id = faker.random.uuid()
+  let id = faker.datatype.uuid()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
